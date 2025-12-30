@@ -40,4 +40,19 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
+    //2
+    public String toStoring(){
+        return title + " by " + author + " ("+ year +")";
+    }
+
+    public boolean equals(Object o){
+        if (this == o ) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return year == book.year && title.equals(book.title) && author.equals(book.author);
+    }
+
+    public int hashCode() {
+        return title.hashCode() + author.hashCode() + year;
+    }
 }

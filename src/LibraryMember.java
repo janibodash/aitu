@@ -1,7 +1,5 @@
-public class LibraryMember {
+public class LibraryMember extends Person{
     private int id;
-    private String name;
-    private String phone;
     private int borrowedb;
     private int fineAmount;
 
@@ -15,12 +13,12 @@ public class LibraryMember {
     public int getId(){
         return id;
     }
-    public String getName(){
+    /*public String getName(){
         return name;
     }
     public String getPhone(){
         return phone;
-    }
+    }*/
     public int getBorrowedb(){
         return borrowedb;
     }
@@ -31,16 +29,28 @@ public class LibraryMember {
     public void setId(int id){
         this.id=id;
     }
-    public void setName(String name ){
+    /*public void setName(String name ){
         this.name=name;
     }
     public void setPhone(String phone ){
         this.phone=phone;
-    }
+    }*/
     public void setBorrowedb(int borrowedb ){
         this.borrowedb=borrowedb;
     }
     public void setFineAmount(int fineAmount ){
         this.fineAmount=fineAmount;
+    }
+
+    public class Person{
+        protected String name;
+        protected String phone;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
     }
 }
