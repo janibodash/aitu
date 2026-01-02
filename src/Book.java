@@ -41,7 +41,7 @@ public class Book {
         this.year = year;
     }
     //2
-    public String toStoring(){
+    public String toString(){
         return title + " by " + author + " ("+ year +")";
     }
 

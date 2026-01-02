@@ -13,12 +13,7 @@ public class LibraryMember extends Person{
     public int getId(){
         return id;
     }
-    /*public String getName(){
-        return name;
-    }
-    public String getPhone(){
-        return phone;
-    }*/
+
     public int getBorrowedb(){
         return borrowedb;
     }
@@ -29,12 +24,12 @@ public class LibraryMember extends Person{
     public void setId(int id){
         this.id=id;
     }
-    /*public void setName(String name ){
+    public void setName(String name ){
         this.name=name;
     }
     public void setPhone(String phone ){
         this.phone=phone;
-    }*/
+    }
     public void setBorrowedb(int borrowedb ){
         this.borrowedb=borrowedb;
     }
@@ -42,15 +37,5 @@ public class LibraryMember extends Person{
         this.fineAmount=fineAmount;
     }
 
-    public class Person{
-        protected String name;
-        protected String phone;
-    }
-    public String getName() {
-        return name;
-    }
 
-    public String getPhone() {
-        return phone;
-    }
 }

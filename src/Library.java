@@ -59,7 +59,9 @@ public class Library {
         }
         System.out.println("Book not found");
     }
-
+    public void sortByYear() {
+        books.sort((b1, b2) -> b1.getYear() - b2.getYear());
+    }
 
 
 }

@@ -19,6 +19,7 @@ public class Main{
         library.addBook(book);
         library.showAllBooks();
         library.findBook("The Lord of the Rings");
+        library.sortByYear();
 
         Person p = new LibraryMember(1, "Jani", "8777", 0, 0);
 
