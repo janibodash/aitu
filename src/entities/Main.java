@@ -63,7 +63,7 @@ public class Main{
 
                     System.out.print("Choose option: ");
                     int choice = sc.nextInt();
-                    sc.nextLine(); // очистка Enter
+                    sc.nextLine();
 
                     switch (choice) {
 
