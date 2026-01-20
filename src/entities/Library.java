@@ -1,9 +1,11 @@
+package entities;
+
 import java.util.ArrayList;
 public class Library {
     private String libraryName;
     private String phone;
     private int totalBooks;
-    //2
+
     private ArrayList<Book> books;
 
     public Library(String libraryName, String phone, int totalBooks) {
@@ -35,21 +37,22 @@ public class Library {
     }
 
     public void LibInf(){
-        System.out.println("Library name: "+ libraryName + " have "+totalBooks+ " books. "+ "their phone: "+phone);
+        System.out.println("entities.Library name: "+ libraryName + " have "+totalBooks+ " books. "+ "their phone: "+phone);
     }
     //2
-    //Добавление книги
+
+
     public void addBook(Book book){
         books.add(book);
-        System.out.println("Book added");
+
     }
-    //Показ всех книг
+
     public void showAllBooks(){
         for (Book book : books) {
             System.out.println(book);
         }
     }
-    //Поиск книги
+
     public void findBook(String title){
         for(Book book : books){
             if(book.getTitle().equalsIgnoreCase(title)){
@@ -57,11 +60,14 @@ public class Library {
                 return;
             }
         }
-        System.out.println("Book not found");
+        System.out.println("entities.Book not found");
     }
     public void sortByYear() {
         books.sort((b1, b2) -> b1.getYear() - b2.getYear());
     }
 
+    public ArrayList<Book> getBooks() {
+        return books;
+    }
 
 }

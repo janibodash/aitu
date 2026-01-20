@@ -1,4 +1,6 @@
-public class LibraryMember extends Person{
+package entities;
+
+public class LibraryMember extends Person {
     private int id;
     private int borrowedb;
     private int fineAmount;
