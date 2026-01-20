@@ -68,19 +68,19 @@ public class Main{
                     switch (choice) {
 
                         case 1 -> {
-                            // SELECT *
+
                             service.ShowBooks(library);
                         }
 
                         case 2 -> {
-                            // SELECT WHERE
+
                             System.out.print("Enter title: ");
                             String title = sc.nextLine();
                             service.findBook(library, title);
                         }
 
                         case 3 -> {
-                            // INSERT
+
                             System.out.print("Title: ");
                             String title = sc.nextLine();
 
@@ -98,7 +98,7 @@ public class Main{
                         }
 
                         case 4 -> {
-                            // DELETE
+
                             System.out.print("Enter title to delete: ");
                             String title = sc.nextLine();
                             service.deleteBook(title);
@@ -107,7 +107,7 @@ public class Main{
                         }
 
                         case 5 -> {
-                            // UPDATE year
+
                             System.out.print("Enter title: ");
                             String title = sc.nextLine();
 
@@ -121,7 +121,7 @@ public class Main{
                         }
 
                         case 6 -> {
-                            // UPDATE author
+
                             System.out.print("Enter title: ");
                             String title = sc.nextLine();
 

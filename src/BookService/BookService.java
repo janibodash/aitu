@@ -7,7 +7,6 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class BookService {
-    // SELECT → БД → Book → Library
     public void ShowBooks(Library library) {
         library.getBooks().clear();
 
