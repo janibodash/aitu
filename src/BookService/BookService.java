@@ -28,7 +28,7 @@ public class BookService {
         library.showAllBooks();
     }
 
-    // INSERT
+
     public void addBook(Book book) {
         try (Connection conn = DBconnect.getConnection()) {
             PreparedStatement ps = conn.prepareStatement(
