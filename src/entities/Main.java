@@ -51,13 +51,15 @@ public class Main{
                     System.out.println("""
                     
                     ===== LIBRARY MENU =====
-                    1. Show all books
-                    2. Find book by title
-                    3. Add new book
-                    4. Delete book
-                    5. Update book year
-                    6. Update book author
-                    0. Exit
+                      1. Show all books
+                      2. Find book by title
+                      3. Add new book
+                      4. Delete book
+                      5. Update book year
+                      6. Update book author
+                      7. Filter books by year
+                      8. Sort books by year
+                      0. Exit
                     ========================
                     """);
 
@@ -131,6 +133,17 @@ public class Main{
                             service.updateAuthorBook(title, newAuthor);
 
                             System.out.println("Author updated.");
+                        }
+                        case 7 -> {
+                            System.out.print("Enter year (from): ");
+                            int year = sc.nextInt();
+                            sc.nextLine();
+
+                            service.filterByYear(library, year);
+                        }
+
+                        case 8 -> {
+                            service.sortByYear(library);
                         }
 
                         case 0 -> {
